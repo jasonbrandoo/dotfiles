@@ -5,7 +5,8 @@
 - clean: ['~']
 
 - link:
-    ~/.vim/colors: vim/colors/OceanicNext.vim
+    ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.vim/colors/OceanicNext.vim: vim/colors/OceanicNext.vim
     ~/.vimrc: vimrc
     ~/.vimrc.code_display: vimrc.code_display
     ~/.vimrc.completion: vimrc.completion
