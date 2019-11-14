@@ -1,0 +1,24 @@
+"Interface Config
+
+" Colorscheme
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+colorscheme OceanicNext
+" End of Colorscheme
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
+
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+" End of NerdTre
+
+" Vim-Airline
+let g:airline_theme='base16_oceanicnext'
+

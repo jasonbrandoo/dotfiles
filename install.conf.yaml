@@ -1,0 +1,10 @@
+- link:
+    ~/.dotfiles: ''
+    ~/.vimrc: vimrc
+    ~/.vimrc: vimrc.code_display
+    ~/.vimrc: vimrc.completion
+    ~/.vimrc: vimrc.interface
+    ~/.vimrc: vimrc.setup
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
