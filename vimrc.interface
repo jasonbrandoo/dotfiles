@@ -21,4 +21,5 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " Vim-Airline
 let g:airline_theme='base16_oceanicnext'
+let g:airline#extensions#coc#enabled = 1
 

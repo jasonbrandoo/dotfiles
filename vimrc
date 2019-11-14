@@ -23,11 +23,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " Code Display
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'Raimondi/delimitMate'
 
 " Completion
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-Plugin 'dense-analysis/ale'
 
 " Language
 Plugin 'pangloss/vim-javascript'
