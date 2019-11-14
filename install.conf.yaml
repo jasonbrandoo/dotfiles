@@ -5,12 +5,11 @@
 - clean: ['~']
 
 - link:
-    ~/.dotfiles: ''
     ~/.vimrc: vimrc
-    ~/.vimrc: vimrc.code_display
-    ~/.vimrc: vimrc.completion
-    ~/.vimrc: vimrc.interface
-    ~/.vimrc: vimrc.setup
+    ~/.vimrc.code_display: vimrc.code_display
+    ~/.vimrc.completion: vimrc.completion
+    ~/.vimrc.interface: vimrc.interface
+    ~/.vimrc.setup: vimrc.setup
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
