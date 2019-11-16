@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Intergration
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/fzf.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Interface
 Plugin 'scrooloose/nerdtree'
@@ -22,7 +23,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Code Display
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'luochen1990/rainbow'
 
 " Completion
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
