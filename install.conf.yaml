@@ -9,7 +9,7 @@
 
 - link:
     ~/.config/nvim/init.vim: config/nvim/init.vim
-    ~/.vim/colors/OceanicNext.vim: vim/colors/OceanicNext.vim
+    ~/.vim/colors/night-owl.vim: vim/colors/night-owl.vim
     ~/.tmux.conf: .tmux.conf
     ~/.vimrc: vimrc
     ~/.vimrc.code_display: vimrc.code_display

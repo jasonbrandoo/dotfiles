@@ -1,25 +1,32 @@
 "Interface Config
 
+" Syntax
+syntax enable
+" End of Syntax
+
 " Colorscheme
 if (has("termguicolors"))
   set termguicolors
 endif
 
-colorscheme OceanicNext
+colorscheme night-owl
 " End of Colorscheme
 
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
 
+" If more than one window and previous buffer was NERDTree, go back to it.
+autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
+
 let g:NERDTreeFileExtensionHighlightFullName = 1
 let g:NERDTreeExactMatchHighlightFullName = 1
 let g:NERDTreePatternMatchHighlightFullName = 1
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+let g:NERDTreeIgnore = ['node_modules', '.git']
+let NERDTreeShowHidden=1
 " End of NerdTre
 
 " Vim-Airline
 let g:airline_theme='base16_oceanicnext'
 let g:airline#extensions#coc#enabled = 1
-
+let g:airline_powerline_fonts = 1
+" End of Vim-Airline

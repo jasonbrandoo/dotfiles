@@ -7,3 +7,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Rainbow Parentheses
 let g:rainbow_active = 1
 " End of Rainbow Parentheses
+
+"Nerd Commenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+"End of Nerd Commenter

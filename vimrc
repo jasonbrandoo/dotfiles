@@ -20,10 +20,8 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
 " Code Display
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'luochen1990/rainbow'
+Plugin 'scrooloose/nerdcommenter'
 
 " Completion
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}

@@ -4,18 +4,15 @@ set expandtab
 set number
 set autoindent
 set hlsearch
-set background=dark
 set splitbelow
 set splitright
-set encoding=UTF-8
+set encoding=utf8
+set cursorline
+set nobackup
+set nowb
+set noswapfile
 
-syntax enable
-
-nnoremap <C-N> :tabnew<cr>
-nnoremap <C-Up> :tabprevious<cr>
-nnoremap <C-Down> :tabnext<cr>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
 inoremap jk <ESC>
 
-let g:airline_powerline_fonts = 1
