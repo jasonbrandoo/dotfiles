@@ -4,17 +4,12 @@
 
 - clean: ['~']
 
-- create:
-    - ~/.vim/colors
-
 - link:
     ~/.config/nvim/init.vim: config/nvim/init.vim
-    ~/.vim/colors/night-owl.vim: vim/colors/night-owl.vim
     ~/.tmux.conf: .tmux.conf
     ~/.vimrc: vimrc
-    ~/.vimrc.code_display: vimrc.code_display
-    ~/.vimrc.completion: vimrc.completion
-    ~/.vimrc.interface: vimrc.interface
+    ~/.vimrc.coc: vimrc.coc
+    ~/.vimrc.plugin: vimrc.plugin
     ~/.vimrc.setup: vimrc.setup
 
 - shell:

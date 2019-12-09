@@ -1,0 +1,12 @@
+" Vim-Airline
+let g:airline_theme='gruvbox'
+let g:airline#extensions#coc#enabled = 1
+let g:airline_powerline_fonts = 1
+" End of Vim-Airline
+
+" Vim jsx pretty
+let g:vim_jsx_pretty_highlight_close_tag = 1
+let g:vim_jsx_pretty_colorful_config = 1
+hi link jsxTag GruvboxBlue
+hi link jsxCloseTag GruvboxRed
+" End of Vim jsx pretty"
