@@ -12,12 +12,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'preservim/nerdtree'
 
 " Interface
 Plugin 'airblade/vim-gitgutter'
