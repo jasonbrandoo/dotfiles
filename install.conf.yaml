@@ -5,12 +5,12 @@
 - clean: ['~']
 
 - link:
-    ~/.config/nvim/init.vim: .config/nvim/init.vim
-    ~/.tmux.conf: .tmux.conf
-    ~/.vimrc: .vimrc
-    ~/.vimrc.coc: .vimrc.coc
-    ~/.vimrc.plugin: .vimrc.plugin
-    ~/.vimrc.setup: .vimrc.setup
+    ~/.config/nvim/init.vim: config/nvim/init.vim
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.vimrc.coc: vimrc.coc
+    ~/.vimrc.plugin: vimrc.plugin
+    ~/.vimrc.setup: vimrc.setup
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
