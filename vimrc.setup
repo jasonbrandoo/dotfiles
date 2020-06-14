@@ -5,7 +5,8 @@ syntax enable
 set termguicolors
 set background=dark
 set t_ut=
-colorscheme gruvbox 
+colorscheme codedark 
+set guicursor=n-v-c-sm:blinkon200
 
 " Indenting
 set tabstop=2

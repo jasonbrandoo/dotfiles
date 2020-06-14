@@ -2,7 +2,7 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 nnoremap <silent> f :CocCommand eslint.executeAutofix<CR>
 
 "Vim-Airline
-let g:airline_theme='gruvbox'
+let g:airline_theme='codedark'
 let g:airline#extensions#coc#enabled = 1
 let g:airline_powerline_fonts = 1
 " End of Vim-Airline
@@ -10,9 +10,17 @@ let g:airline_powerline_fonts = 1
 " Vim jsx pretty
 let g:vim_jsx_pretty_highlight_close_tag = 1
 let g:vim_jsx_pretty_colorful_config = 1
-hi link jsxTag GruvboxBlue
-hi link jsxCloseTag GruvboxRed
+hi link jsxTag htmlArg
+hi link jsxCloseTag ErrorMsg 
+hi link jsxCloseString ErrorMsg
 " End of Vim jsx pretty"
 
 "NerdTree
 let NERDTreeShowHidden = 1
+
+" Ctrlp
+set wildignore+=*/node_modules/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3.8'
