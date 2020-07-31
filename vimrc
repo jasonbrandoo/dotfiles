@@ -27,7 +27,7 @@ Plugin 'tpope/vim-vinegar'
 
 " Interface
 Plugin 'airblade/vim-gitgutter'
-Plugin 'itchyny/lighline.vim'
+Plugin 'itchyny/lightline.vim'
 
 " Completion
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}

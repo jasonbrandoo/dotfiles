@@ -3,8 +3,16 @@ syntax enable
 
 " Font
 set encoding=utf-8
-set renderoptions=type:directx
-set guifont=Fira_Code
+if has("gui_running")
+  set renderoptions=type:directx
+  set guifont=Fira\ Mono\ 10
+  set guioptions-=T
+  set guioptions-=L
+  set guioptions-=r
+endif
+
+" Give more space for displaying messages.
+set cmdheight=2
 
 " Colors
 set termguicolors
@@ -42,6 +50,11 @@ set noswapfile
 
 " Clipboard
 set clipboard=unnamedplus
+
+" Netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+set wildignore+=node_modules
 
 " Always move linewise in normal mode
 nnoremap k gk

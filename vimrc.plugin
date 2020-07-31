@@ -25,9 +25,6 @@ let g:lightline = {
 " Vim jsx pretty
 let g:vim_jsx_pretty_highlight_close_tag = 1
 let g:vim_jsx_pretty_colorful_config = 1
-hi link jsxTag htmlArg
-hi link jsxCloseTag ErrorMsg 
-hi link jsxCloseString ErrorMsg
 " End of Vim jsx pretty"
 
 " Python support
