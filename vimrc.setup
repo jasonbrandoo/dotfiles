@@ -1,11 +1,14 @@
 " Syntax
 syntax enable
 
+" Font
+set encoding=utf-8
+set renderoptions=type:directx
+set guifont=Fira_Code
+
 " Colors
 set termguicolors
 set background=dark
-set t_ut=
-colorscheme codedark 
 set guicursor=n-v-c-sm:blinkon200
 
 " Indenting
