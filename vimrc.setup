@@ -3,8 +3,16 @@ syntax enable
 
 " Font
 set encoding=utf-8
-set renderoptions=type:directx
-set guifont=Fira_Code
+if has('gui_running')
+  set renderoptions=type:directx
+  set guifont=Fira\ Code
+  set guioptions-=T
+  set guioptions-=r
+  set guioptions-=L
+endif
+
+" Give more space for displaying messages.
+set cmdheight=2
 
 " Colors
 set termguicolors
