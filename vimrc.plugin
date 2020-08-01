@@ -1,12 +1,12 @@
 " CocAction
- command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
- nnoremap <silent> f :CocCommand eslint.executeAutofix<CR>
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+nnoremap <silent> f :CocCommand eslint.executeAutofix<CR>
 " End Of CocAction
 
 " Colorscheme
-colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_invert_selection='0'
+colorscheme gruvbox
 " End of colorscheme
 
 " Vim lightline
@@ -25,8 +25,12 @@ let g:lightline = {
 " Vim jsx pretty
 let g:vim_jsx_pretty_highlight_close_tag = 1
 let g:vim_jsx_pretty_colorful_config = 1
+hi link jsxTag GruvboxBlue
+hi link jsxCloseTag GruvboxRed 
+hi link jsxCloseString GruvboxRed
+hi link jsxComponentName GruvboxGreen
 " End of Vim jsx pretty"
-
+"
 " Python support
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3.8'
