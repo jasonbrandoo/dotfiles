@@ -1,6 +1,6 @@
 " CocAction
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-nnoremap <silent> f :CocCommand eslint.executeAutofix<CR>
+nnoremap <silent><Leader>ef :CocCommand eslint.executeAutofix<CR>
 " End Of CocAction
 
 " Colorscheme
@@ -10,28 +10,20 @@ colorscheme gruvbox
 " End of colorscheme
 
 " Vim lightline
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
+let g:airline_theme = 'gruvbox'
+let g:airline_powerline_fonts = 1
 " End of vim lightline
 
 " Vim jsx pretty
-let g:vim_jsx_pretty_highlight_close_tag = 1
-let g:vim_jsx_pretty_colorful_config = 1
-hi link jsxTag GruvboxBlue
-hi link jsxCloseTag GruvboxRed 
-hi link jsxCloseString GruvboxRed
-hi link jsxComponentName GruvboxGreen
+" let g:vim_jsx_pretty_highlight_close_tag = 1
+" hi link jsxTag GruvboxBlue
+" hi link jsxCloseTag GruvboxRed 
+" hi link jsxCloseString GruvboxRed
+" hi link jsxComponentName GruvboxGreen
 " End of Vim jsx pretty"
+
 "
-" Python support
-let g:python_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3.8'
-" End of python support
+nnoremap <C-P> :GFiles<CR>
+set statusline^=%{coc#status()}
+set pythonthreedll='~/AppData/Local/Programs/Python/Python38-32/python38.dll'
+set pythonthreehome='~/AppData/Local/Programs/Python/Python38-32'
