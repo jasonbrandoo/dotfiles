@@ -13,7 +13,6 @@ call vundle#begin('~/vimfiles/bundle')
 Plugin 'VundleVim/Vundle.vim'
 
 " Integration
-Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/fzf' "cd into /Users/user/vimfiles/bundle/fzf then do 'bash install'
 Plugin 'junegunn/fzf.vim'

@@ -41,7 +41,6 @@ set expandtab
 
 " Wrapping
 set nowrap
-set linebreak
 
 " Searching
 set ignorecase
@@ -56,12 +55,23 @@ set noswapfile
 " Clipboard
 set clipboard=unnamedplus
 
+" Completion
+set completeopt=menuone,noinsert,noselect
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Column
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 " Netrw
 let g:netrw_banner = 0
-let g:netrw_browse_split = 2
+" let g:netrw_browse_split = 2
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 25
 set wildignore+=node_modules
+set wildignore+=.git
 
 " Mapping leader to space
 let mapleader = ' '
@@ -75,10 +85,10 @@ nnoremap k gk
 nnoremap j gj
 
 " Moving between splits
-nnoremap <C-H> <C-W><C-H>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
+nnoremap <silent><C-H> :wincmd h<CR>
+nnoremap <silent><C-L> :wincmd l<CR>
+nnoremap <silent><C-J> :wincmd j<CR>
+nnoremap <silent><C-K> :wincmd k<CR>
 
 " Moving lines
 nnoremap <A-j> :m .+1<CR>==
@@ -87,7 +97,10 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
+vnoremap X "_d
 
 "Esc
 inoremap jk <ESC>
 
+let g:python_host_prog  = 'C:\Python27\python.exe'
+let g:python3_host_prog  = 'C:\Users\user\AppData\Local\Programs\Python\Python38\python.exe'
