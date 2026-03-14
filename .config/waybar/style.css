@@ -1,0 +1,118 @@
+@define-color dark #1a1b26;
+@define-color light #c0caf5;
+@define-color red #fb4934;
+@define-color green-light #98971a;
+@define-color green #b8bb26;
+@define-color yellow #fabd2f;
+@define-color blue #83a598;
+@define-color purple #d3869b;
+@define-color aqua #8ec07c;
+@define-color orange #fe8019;
+@define-color gray #a89984;
+
+
+
+* {
+		border: none;
+		font-family: "NotoSans Nerd";
+}
+
+window#waybar {
+		background: @dark;
+}
+
+#window {
+		padding-left: 10px;
+		padding-right: 10px;
+		transition: none;
+		color: @bg-light;
+		background: @bg-dark;
+}
+
+#workspaces {
+		font-weight: bold;
+		margin: 0 0 0 5px;
+		transition: none;
+}
+
+#workspaces button {
+		transition: none;
+		color: @light;
+		background: transparent;
+}
+
+#workspaces button.active {
+		color: @green-light;
+}
+
+#workspaces button:hover {
+		transition: none;
+		box-shadow: inherit;
+		text-shadow: inherit;
+		color: @green;
+}
+
+#clock {
+		color: @light;
+		font-weight: bold;
+}
+
+#system #custom-openbracket, #system #custom-closebracket {
+		color: @yellow;
+}
+
+#system label {
+		font-weight: bold;
+		margin: 0 2px 0 2px;
+		padding: 0 2px;
+		transition: none;
+		color: @light;
+}
+
+#system #cpu.warning {
+		color: @yellow;
+}
+
+#system #cpu.critical {
+		color: @red;
+}
+
+#system #temperature.warning {
+		color: @yellow;
+}
+
+#system #temperature.critical {
+		color: @red;
+}
+
+#system #memory.warning {
+		color: @yellow;
+}
+
+#system #memory.critical {
+		color: @red;
+}
+
+#system #battery.good {
+		color: @light;
+}
+
+#system #battery.warning {
+		color: @yellow;
+}
+
+#system #battery.critical:not(.charging) {
+		color: @light;
+		animation-name: blink;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+}
+
+@keyframes blink {
+		to {
+				color: @red;
+		}
+}
+

@@ -1,0 +1,7 @@
+antigravity
+batctl-tui
+catppuccin-gtk-theme-latte
+cisco-secure-client
+hyprshutdown
+yay-bin
+yay-bin-debug
