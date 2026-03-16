@@ -57,6 +57,7 @@ ttf-liberation
 ttf-noto-nerd
 unzip
 waybar
+wget
 which
 wl-clipboard
 wofi
