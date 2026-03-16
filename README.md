@@ -1,3 +1,3 @@
 # Just my arch config
 
-![Alt House](./wallpaper/background.png "House")
+![Alt House](./Image/house.png "House")
