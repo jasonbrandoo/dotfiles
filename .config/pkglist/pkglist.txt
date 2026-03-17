@@ -1,4 +1,5 @@
 adw-gtk-theme
+ansible
 base
 base-devel
 brightnessctl
@@ -51,6 +52,7 @@ slurp
 steam
 sudo
 swaync
+tmux
 ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
