@@ -49,8 +49,10 @@ qt5-wayland
 qt6-wayland
 slurp
 steam
+stow
 sudo
 swaync
+tmux
 ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
