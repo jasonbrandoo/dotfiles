@@ -27,7 +27,7 @@
 		    "pulseaudio",
 		    "pulseaudio#source",
 		    "battery",
-		    "battery#bat2",
+		    // "battery#bat2",
 		    // "power-profiles-daemon",
 		    // "idle_inhibitor",
 		    "custom/notification"
@@ -119,7 +119,6 @@
         "tooltip-format": "{percent}%"
     },
     "battery": {
-	    "bat": "BAT0",
 	    "states": {
 		    "good": 90,
 		    "warning": 30,
@@ -158,7 +157,7 @@
 	    }
     },
     "network": {
-	    "interface": "wlp3s0*",
+	    "interface": "wlp*",
 	    "format": "",
         "tooltip-format": "{essid} ({signalStrength}%) ",
 	    "format-disconnected": "⚠"
@@ -196,8 +195,8 @@
 	    "menu": "on-click",
 	    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 	    "menu-actions": {
-		    "shutdown": "shutdown",
-		    "reboot": "reboot",
+		    "shutdown": "systemctl shutdown",
+		    "reboot": "systemctl reboot",
 		    "suspend": "systemctl suspend",
 		    "hibernate": "systemctl hibernate"
 	    }

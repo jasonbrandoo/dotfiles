@@ -1,8 +1,4 @@
-antigravity
-batctl-tui
-catppuccin-gtk-theme-latte
 cisco-secure-client
 hyprshutdown
-rmlint
 yay-bin
 yay-bin-debug

@@ -19,10 +19,8 @@ hyprland
 hyprlock
 hyprpaper
 hyprpolkitagent
-intel-ucode
 kitty
 ladspa
-lib32-mesa
 libnotify
 linux
 linux-firmware
@@ -49,7 +47,6 @@ power-profiles-daemon
 qt5-wayland
 qt6-wayland
 slurp
-steam
 stow
 sudo
 swaync
