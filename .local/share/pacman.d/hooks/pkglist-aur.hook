@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating AUR package list...
+When = PostTransaction
+Exec = /bin/sh -c "/usr/bin/pacman -Qqem > $HOME/.config/pkglist/pkglist-aur.txt"
