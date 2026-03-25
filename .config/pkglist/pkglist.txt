@@ -26,7 +26,6 @@ libreoffice-still
 linux
 linux-firmware
 lua
-luarocks
 man-db
 man-pages
 mesa
