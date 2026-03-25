@@ -85,7 +85,7 @@ notificationwindow, blankwindow {
   /* The actual notification */
   border-radius: var(--border-radius);
   border: var(--border);
-  padding: 0;
+  padding: 5px;
   transition: var(--hover-tranistion);
   background: var(--noti-bg);
 }
@@ -319,9 +319,10 @@ notificationwindow, blankwindow {
 
 .control-center {
   /* The Control Center which contains the old notifications + widgets */
-  background: var(--cc-bg);
+  background: var(--noti-bg);
   color: var(--text-color);
   border-radius: var(--border-radius);
+  border: var(--border);
 }
 
 .control-center .control-center-list-placeholder {

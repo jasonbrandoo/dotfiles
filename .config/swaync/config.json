@@ -56,14 +56,16 @@
 		"inhibitors",
 		"title",
 		"dnd",
-		"notifications"
+		"notifications",
+		"backlight",
+		"volume"
 	],
 	"widget-config": {
 		"backlight": {
-			"label": "Brightness"
+			"label": "☼"
 		},
 		"volume": {
-			"label": "Volume"
+			"label": ""
 		},
 		"notifications": {
 			"vexpand": true

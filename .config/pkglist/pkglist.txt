@@ -42,6 +42,7 @@ os-prober
 otf-font-awesome
 pacman-contrib
 pipewire
+pipewire-alsa
 pipewire-audio
 pipewire-pulse
 power-profiles-daemon
