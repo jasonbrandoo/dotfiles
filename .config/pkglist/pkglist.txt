@@ -1,4 +1,5 @@
 adw-gtk-theme
+alsa-utils
 base
 base-devel
 batsignal
@@ -21,7 +22,6 @@ hyprlock
 hyprpaper
 hyprpolkitagent
 kitty
-ladspa
 libnotify
 libreoffice-still
 linux
@@ -31,10 +31,8 @@ man-db
 man-pages
 mesa
 neovim
-network-manager-applet
 networkmanager
 networkmanager-openconnect
-noise-suppression-for-voice
 noto-fonts
 noto-fonts-emoji
 nsxiv
@@ -42,6 +40,7 @@ nwg-look
 os-prober
 otf-font-awesome
 pacman-contrib
+pavucontrol
 pipewire
 pipewire-alsa
 pipewire-audio
@@ -61,6 +60,8 @@ ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
 ttf-noto-nerd
+vlc
+vlc-plugin-ffmpeg
 waybar
 wget
 wl-clipboard
