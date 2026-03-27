@@ -1,6 +1,7 @@
 adw-gtk-theme
 base
 base-devel
+batsignal
 brightnessctl
 btop
 code
@@ -44,10 +45,12 @@ pacman-contrib
 pipewire
 pipewire-alsa
 pipewire-audio
+pipewire-jack
 pipewire-pulse
 power-profiles-daemon
 qt5-wayland
 qt6-wayland
+rofi
 slurp
 speech-dispatcher
 stow
@@ -58,11 +61,9 @@ ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
 ttf-noto-nerd
-unzip
 waybar
 wget
 wl-clipboard
-wofi
 xdg-desktop-portal-hyprland
 zram-generator
 zsh

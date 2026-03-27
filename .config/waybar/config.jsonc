@@ -58,8 +58,8 @@
 	    }
     },
     "clock": {
-	    "format": "{:%H:%M}",
-	    "format-alt": "{:%A, %B %d, %Y (%R)}",
+	    "format": "{:%A, %B %d, %Y (%R)}",
+	    "format-alt": "{:%H:%M}",
 	    "tooltip-format": "<tt><small>{calendar}</small></tt>",
 	    "calendar": {
 		    "mode"          : "year",
@@ -112,7 +112,7 @@
 	    "states": {
 		    "good": 90,
 		    "warning": 30,
-		    "critical": 15
+		    "critical": 20
 	    },
 	    "format": "{icon}",
 	    "format-full": "{capacity}% {icon}",
@@ -156,8 +156,7 @@
     "network#2": {
 	    "interface": "cscotun0",
 	    "format": "",
-        "tooltip-format": "{ifname}",
-	    "format-disconnected": "⚠"
+        "tooltip-format": "{ifname}"
     },
     "pulseaudio": {
 	    "format": "{icon}",
@@ -173,12 +172,14 @@
 		    "portable": "",
 		    "car": "",
 		    "default": ["", "", ""]
-	    }
+	    },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
     "pulseaudio#source": {
 	    "format": "{format_source}",
 	    "format-source": "",
-	    "format-source-muted": ""
+	    "format-source-muted": "",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
     },
     "custom/power": {
 	    "format" : "⏻",

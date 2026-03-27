@@ -63,7 +63,7 @@ window#waybar {
 
 #system label {
 		font-weight: bold;
-		margin: 0 2px 0 2px;
+		margin: 0 5px 0 5px;
 		padding: 0 2px;
 		transition: none;
 		color: @light;
