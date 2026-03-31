@@ -156,7 +156,8 @@
     "network#2": {
 	    "interface": "cscotun0",
 	    "format": "",
-        "tooltip-format": "{ifname}"
+        "tooltip-format": "{ifname}",
+	    "format-disconnected": ""
     },
     "pulseaudio": {
 	    "format": "{icon}",
