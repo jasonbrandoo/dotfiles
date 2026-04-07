@@ -16,11 +16,10 @@
 		    "temperature",
 		    "network",
 		    "network#2",
-		    "pulseaudio",
-		    "pulseaudio#source",
+		    "wireplumber",
+		    "wireplumber#source",
 		    "battery",
 		    "custom/notification",
-            "custom/power"
 	    ]
     },
     "hyprland/workspaces": {
@@ -159,7 +158,7 @@
         "tooltip-format": "{ifname}",
 	    "format-disconnected": ""
     },
-    "pulseaudio": {
+    "wireplumber": {
 	    "format": "{icon}",
         "tooltip-format": "{volume}% {icon}",
 	    "format-bluetooth": "{icon}",
@@ -176,7 +175,7 @@
 	    },
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
     },
-    "pulseaudio#source": {
+    "wireplumber#source": {
 	    "format": "{format_source}",
 	    "format-source": "",
 	    "format-source-muted": "",
