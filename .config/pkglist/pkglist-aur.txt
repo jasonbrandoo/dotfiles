@@ -1,4 +1,6 @@
+antigravity
 cisco-secure-client
 hyprshutdown
+visual-studio-code-bin
 yay-bin
 yay-bin-debug

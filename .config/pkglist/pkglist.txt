@@ -5,7 +5,6 @@ base-devel
 batsignal
 brightnessctl
 btop
-code
 dolphin
 efibootmgr
 fd
@@ -13,6 +12,7 @@ firefox
 fontconfig
 fzf
 git
+gnome-keyring
 gnu-free-fonts
 grim
 grub
@@ -52,16 +52,19 @@ power-profiles-daemon
 qt5-wayland
 qt6-wayland
 rofi
+seahorse
 slurp
 speech-dispatcher
 stow
 sudo
 swaync
 tmux
+ttc-iosevka
 ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
 ttf-noto-nerd
+unzip
 vlc
 vlc-plugin-ffmpeg
 waybar
