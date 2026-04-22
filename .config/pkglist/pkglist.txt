@@ -22,7 +22,6 @@ hyprland
 hyprlock
 hyprpaper
 hyprpolkitagent
-kitty
 lazygit
 libnotify
 libreoffice-still
