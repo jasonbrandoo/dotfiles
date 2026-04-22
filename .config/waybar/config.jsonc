@@ -19,7 +19,7 @@
 		    "wireplumber",
 		    "wireplumber#source",
 		    "battery",
-		    "custom/notification",
+		    "custom/notification"
 	    ]
     },
     "hyprland/workspaces": {

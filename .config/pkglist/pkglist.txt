@@ -11,6 +11,7 @@ fd
 firefox
 fontconfig
 fzf
+ghostty
 git
 gnome-keyring
 gnu-free-fonts
@@ -52,6 +53,7 @@ power-profiles-daemon
 qt5-wayland
 qt6-wayland
 rofi
+rust
 seahorse
 slurp
 speech-dispatcher

@@ -27,10 +27,29 @@ vim.o.autoindent = true
 vim.o.expandtab = true
 vim.o.wrap = false
 vim.o.linebreak = true
+vim.o.termguicolors = true
+vim.o.background = "dark"
 
-vim.schedule(function()
-	vim.o.clipboard = "unnamedplus"
-end)
+vim.cmd("colorscheme catppuccin")
+
+vim.api.nvim_create_autocmd("UIEnter", {
+	callback = function()
+		vim.o.clipboard = "unnamedplus"
+	end,
+})
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	callback = function()
+		vim.hl.on_yank()
+	end,
+})
+
+vim.api.nvim_create_user_command("GitBlameLine", function()
+	local line_number = vim.fn.line(".")
+	local filename = vim.api.nvim_buf_get_name(0)
+	print(vim.system({ "git", "blame", "-L", line_number .. ",+1", filename }):wait().stdout)
+end, { desc = "Print the git blame for the current line" })
 
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
@@ -47,11 +66,6 @@ vim.diagnostic.config({
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>")
-
-vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>")
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>")

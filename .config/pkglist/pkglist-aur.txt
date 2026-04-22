@@ -1,6 +1,8 @@
 antigravity
 cisco-secure-client
 hyprshutdown
+insomnia-bin
+microsoft-edge-stable-bin
 visual-studio-code-bin
 yay-bin
 yay-bin-debug

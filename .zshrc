@@ -120,6 +120,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 #dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias paccleanup="sudo pacman -Rns \$(pacman -Qtdq)"
+alias maybe-pick="$HOME/.local/bin/check_pick.sh"
+alias commit-to-csv="$HOME/.local/bin/git_to_csv.sh"
 
 # opencode
 export PATH=/home/jason/.opencode/bin:$PATH
