@@ -1,0 +1,57 @@
+* {
+  background-color: transparent;
+}
+
+window {
+  height: 500px;
+  location: center;
+  padding: 0px;
+  background: #11111b;
+}
+
+mainbox {
+  children: [ "borderbox" ];
+  background-color:#11111b;
+}
+
+borderbox {
+  children: [ "contentbox" ];
+}
+
+contentbox {
+  children: [ "entry", "listview" ];
+}
+
+element {
+  border-radius: 0px;
+  padding: 10px;
+}
+
+element-text {
+  text-color: #cdd6f4;
+}
+
+element selected {
+  background-color: #313244;
+  text-color: #e5c07b;
+  border-radius: 3px;
+}
+
+prompt {
+  text-color: #61afef;
+  background-color:#11111b;
+}
+
+entry {
+  padding: 12px;
+  expand: false;
+  text-color: #cdd6f4;
+  border-radius: 0px 3px 0px 0px;
+  background-color:#11111b;
+}
+
+listview {
+  lines: 1;
+  background-color:#11111b;
+  padding: 0 15px;
+}

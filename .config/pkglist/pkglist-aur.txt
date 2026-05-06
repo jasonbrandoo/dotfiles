@@ -1,4 +1,5 @@
 antigravity
+brave-bin
 cisco-secure-client
 hyprshutdown
 insomnia-bin

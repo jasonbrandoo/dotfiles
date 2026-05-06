@@ -7,6 +7,9 @@ return {
 		config = function()
 			local parsers = {
 				"bash",
+				"css",
+				"ecma",
+				"jsx",
 				"lua",
 				"luadoc",
 				"query",

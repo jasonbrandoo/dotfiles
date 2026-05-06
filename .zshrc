@@ -117,7 +117,7 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-#dotfiles
+# dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias paccleanup="sudo pacman -Rns \$(pacman -Qtdq)"
 alias maybe-pick="$HOME/.local/bin/check_pick.sh"
@@ -126,11 +126,7 @@ alias commit-to-csv="$HOME/.local/bin/git_to_csv.sh"
 # opencode
 export PATH=/home/jason/.opencode/bin:$PATH
 
-#XDG
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
+# editor
 export EDITOR=nvim
 
 alias rg="rg --hyperlink-format=kitty"

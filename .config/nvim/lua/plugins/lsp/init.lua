@@ -15,6 +15,7 @@ return {
 				vtsls = {},
 				bashls = {},
 				stylua = {},
+				gopls = {},
 				rust_analyzer = {
 					settings = {
 						["rust-analyzer"] = {

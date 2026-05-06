@@ -67,6 +67,7 @@ window#waybar {
 		padding: 0 2px;
 		transition: none;
 		color: @light;
+		background: transparent;
 }
 
 #system #cpu.warning {
