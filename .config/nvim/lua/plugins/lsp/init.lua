@@ -16,6 +16,7 @@ return {
 				bashls = {},
 				stylua = {},
 				gopls = {},
+				cssls = {},
 				rust_analyzer = {
 					settings = {
 						["rust-analyzer"] = {

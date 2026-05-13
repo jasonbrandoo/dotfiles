@@ -1,0 +1,7 @@
+require("hyprland.event")
+require("hyprland.monitor")
+require("hyprland.config")
+require("hyprland.permission")
+require("hyprland.animation")
+require("hyprland.bind")
+require("hyprland.window")

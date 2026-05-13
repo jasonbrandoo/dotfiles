@@ -3,10 +3,8 @@ alsa-utils
 base
 base-devel
 batsignal
-breeze-gtk
 brightnessctl
 btop
-dolphin
 efibootmgr
 fd
 firefox
@@ -24,6 +22,7 @@ hyprland
 hyprlock
 hyprpaper
 hyprpolkitagent
+inter-font
 lazygit
 libnotify
 libreoffice-still
@@ -33,6 +32,7 @@ lua
 man-db
 man-pages
 mesa
+nautilus
 neovim
 networkmanager
 networkmanager-openconnect
@@ -71,6 +71,7 @@ unzip
 vlc
 vlc-plugin-ffmpeg
 waybar
+wf-recorder
 wget
 wl-clipboard
 xdg-desktop-portal-hyprland
