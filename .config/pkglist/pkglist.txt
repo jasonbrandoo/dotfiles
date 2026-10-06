@@ -22,7 +22,10 @@ hyprland
 hyprlock
 hyprpaper
 hyprpolkitagent
+hyprshutdown
+imagemagick
 inter-font
+jq
 lazygit
 libnotify
 libreoffice-still
@@ -70,7 +73,6 @@ ttf-noto-nerd
 unzip
 vlc
 vlc-plugin-ffmpeg
-waybar
 wf-recorder
 wget
 wl-clipboard

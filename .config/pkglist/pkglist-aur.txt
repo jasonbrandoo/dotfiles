@@ -1,9 +1,11 @@
 antigravity
+antigravity-cli
 brave-bin
+bruno-git
 cisco-secure-client
-hyprshutdown
 insomnia-bin
 microsoft-edge-stable-bin
 visual-studio-code-bin
+waybar-git
 yay-bin
-yay-bin-debug
+zen-browser-bin
