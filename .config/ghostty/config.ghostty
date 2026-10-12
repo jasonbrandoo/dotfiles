@@ -1,0 +1,5 @@
+theme = Catppuccin Mocha
+font-family = Iosevka
+font-size = 10
+background-opacity = 0.8
+background-opacity-cells = true
